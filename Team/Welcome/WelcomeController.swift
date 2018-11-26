@@ -93,6 +93,7 @@ class WelcomeController: UIViewController {
         }()
         
         navContainer.addSubview(skipBtn)
+        skipBtn.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
         NSLayoutConstraint.activate([
             skipBtn.centerYAnchor.constraint(equalTo: navContainer.centerYAnchor, constant: -10),
             skipBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
@@ -119,8 +120,6 @@ class WelcomeController: UIViewController {
             nextBtn.heightAnchor.constraint(equalToConstant: 50)
             ])
         
-        
-        
         navContainer.addSubview(pageNav)
         NSLayoutConstraint.activate([
             pageNav.centerYAnchor.constraint(equalTo: nextBtn.centerYAnchor, constant: 0),
@@ -136,7 +135,14 @@ class WelcomeController: UIViewController {
             let indexPath = IndexPath(item: nextIndex, section: 0)
             pageCollection?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             pageNav.currentPage = nextIndex
+        } else {
+            handleSkip()
         }
+    }
+    
+    @objc func handleSkip() {
+        let signUp = SignUpController()
+        self.navigationController?.pushViewController(signUp, animated: true)
     }
     
 }
