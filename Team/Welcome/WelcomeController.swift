@@ -42,6 +42,8 @@ class WelcomeController: UIViewController {
         view.backgroundColor = .white
         self.navigationController?.navigationBar.barTintColor = .white
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(customView: UIView())
+        self.navigationItem.backBarButtonItem?.tintColor = .white
     }
     
     func setupUIElements() {
