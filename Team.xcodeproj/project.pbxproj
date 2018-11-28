@@ -11,12 +11,15 @@
 		4902A04321AB477600B5093A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4902A04221AB477600B5093A /* Assets.xcassets */; };
 		4902A04621AB477600B5093A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4902A04421AB477600B5093A /* LaunchScreen.storyboard */; };
 		496674BE21AC39CD00957191 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496674BD21AC39CD00957191 /* SignUpController.swift */; };
+		497C432021AE0D5000DB35CC /* MessageSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C431F21AE0D5000DB35CC /* MessageSearchBar.swift */; };
 		49A16E6C21ACCA7B00ED7A9A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A16E6B21ACCA7B00ED7A9A /* CustomTextField.swift */; };
 		49A16E7021AD0D6A00ED7A9A /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A16E6F21AD0D6A00ED7A9A /* SignInController.swift */; };
 		49A6599E21AB60D60071FFD5 /* HexToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6599D21AB60D60071FFD5 /* HexToUIColor.swift */; };
 		49A659A021AB62E30071FFD5 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6599F21AB62E30071FFD5 /* WelcomeController.swift */; };
 		49A659A221AB64E50071FFD5 /* WelcomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A659A121AB64E50071FFD5 /* WelcomCells.swift */; };
 		49A659A421AB89AC0071FFD5 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A659A321AB89AC0071FFD5 /* WelcomePage.swift */; };
+		49B73BAE21ADC07900B4AD8A /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B73BAD21ADC07900B4AD8A /* MessagesController.swift */; };
+		49B73BB121ADEA8200B4AD8A /* NavGradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B73BB021ADEA8200B4AD8A /* NavGradients.swift */; };
 		91E672718EFC96718F8FA09F /* Pods_Team.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DDC4A90AA9A392371E5A0B /* Pods_Team.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,12 +30,15 @@
 		4902A04521AB477600B5093A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4902A04721AB477600B5093A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496674BD21AC39CD00957191 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		497C431F21AE0D5000DB35CC /* MessageSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSearchBar.swift; sourceTree = "<group>"; };
 		49A16E6B21ACCA7B00ED7A9A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		49A16E6F21AD0D6A00ED7A9A /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		49A6599D21AB60D60071FFD5 /* HexToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexToUIColor.swift; sourceTree = "<group>"; };
 		49A6599F21AB62E30071FFD5 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		49A659A121AB64E50071FFD5 /* WelcomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomCells.swift; sourceTree = "<group>"; };
 		49A659A321AB89AC0071FFD5 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		49B73BAD21ADC07900B4AD8A /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		49B73BB021ADEA8200B4AD8A /* NavGradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavGradients.swift; sourceTree = "<group>"; };
 		C144D42BB0E1D2AF8054E35D /* Pods-Team.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Team/Pods-Team.debug.xcconfig"; sourceTree = "<group>"; };
 		F1DDC4A90AA9A392371E5A0B /* Pods_Team.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7F3F3B02EF21D144C282EF /* Pods-Team.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team.release.xcconfig"; path = "Pods/Target Support Files/Pods-Team/Pods-Team.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,12 +77,10 @@
 		4902A03A21AB477500B5093A /* Team */ = {
 			isa = PBXGroup;
 			children = (
-				49A6599B21AB60B40071FFD5 /* Utils */,
 				4902A03B21AB477500B5093A /* AppDelegate.swift */,
+				49A6599B21AB60B40071FFD5 /* Utils */,
 				49A16E6821ACB04200ED7A9A /* Views */,
-				496674BC21AC399800957191 /* Welcome */,
-				49A16E6D21ACEE3A00ED7A9A /* SignUp */,
-				49A16E6E21AD0D5900ED7A9A /* SignIn */,
+				49B73BA921ADA40A00B4AD8A /* Controllers */,
 				4902A04221AB477600B5093A /* Assets.xcassets */,
 				4902A04421AB477600B5093A /* LaunchScreen.storyboard */,
 				4902A04721AB477600B5093A /* Info.plist */,
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				49A16E6B21ACCA7B00ED7A9A /* CustomTextField.swift */,
+				497C431F21AE0D5000DB35CC /* MessageSearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		49A6599B21AB60B40071FFD5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				49B73BAF21ADEA5D00B4AD8A /* Nav Tweaks */,
 				49A6599C21AB60BB0071FFD5 /* Colors */,
 			);
 			path = Utils;
@@ -132,6 +138,33 @@
 				49A6599D21AB60D60071FFD5 /* HexToUIColor.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		49B73BA921ADA40A00B4AD8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				496674BC21AC399800957191 /* Welcome */,
+				49A16E6D21ACEE3A00ED7A9A /* SignUp */,
+				49A16E6E21AD0D5900ED7A9A /* SignIn */,
+				49B73BAA21ADC03600B4AD8A /* Messages */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49B73BAA21ADC03600B4AD8A /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				49B73BAD21ADC07900B4AD8A /* MessagesController.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		49B73BAF21ADEA5D00B4AD8A /* Nav Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				49B73BB021ADEA8200B4AD8A /* NavGradients.swift */,
+			);
+			path = "Nav Tweaks";
 			sourceTree = "<group>";
 		};
 		5C083FC8A40967D4D90BFB4E /* Frameworks */ = {
@@ -285,7 +318,10 @@
 				49A659A421AB89AC0071FFD5 /* WelcomePage.swift in Sources */,
 				49A16E7021AD0D6A00ED7A9A /* SignInController.swift in Sources */,
 				49A659A221AB64E50071FFD5 /* WelcomCells.swift in Sources */,
+				49B73BB121ADEA8200B4AD8A /* NavGradients.swift in Sources */,
+				497C432021AE0D5000DB35CC /* MessageSearchBar.swift in Sources */,
 				49A6599E21AB60D60071FFD5 /* HexToUIColor.swift in Sources */,
+				49B73BAE21ADC07900B4AD8A /* MessagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

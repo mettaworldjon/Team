@@ -179,12 +179,22 @@ class SignUpController: UIViewController {
             btn.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
             btn.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: -15)
             ])
+        
+        let signin = UIButton(type: .system)
+        view.addSubview(signin)
+        signin.translatesAutoresizingMaskIntoConstraints = false
+        signin.setTitle("Already A Member? Sign In", for: .normal)
+        signin.setTitleColor(UIColor("464646"), for: .normal)
+        signin.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        NSLayoutConstraint.activate([
+            signin.widthAnchor.constraint(equalTo: btn.widthAnchor, constant: -10),
+            signin.centerXAnchor.constraint(equalTo: container.centerXAnchor),
+            signin.topAnchor.constraint(equalTo: btn.bottomAnchor, constant: 15)
+            ])
     }
     
     @objc func handleSignUp() {
-        self.title = ""
         let signIn = SignInController()
-        signIn.ref = self
         self.navigationController?.pushViewController(signIn, animated: true)
     }
     
